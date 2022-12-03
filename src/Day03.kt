@@ -1,13 +1,13 @@
 fun main() {
     val charslist = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
     fun part1(input: List<String>): Int {
-        return input.map {
-            val middle = it.length/2
+        return input.sumOf {
+            val middle = it.length / 2
             val first = it.substring(0 until middle)
             val second = it.substring(middle)
             val intersect = first.toCharArray().intersect(second.toSet())
             charslist.indexOf(intersect.first()) + 1
-        }.sum()
+        }
     }
 
     fun part2(input: List<String>): Int {
