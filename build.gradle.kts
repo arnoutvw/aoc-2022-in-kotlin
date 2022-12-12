@@ -6,6 +6,10 @@ repositories {
     mavenCentral()
 }
 
+dependencies {
+    implementation("com.notkamui.libs:keval:0.8.0")
+}
+
 tasks {
     sourceSets {
         main {
